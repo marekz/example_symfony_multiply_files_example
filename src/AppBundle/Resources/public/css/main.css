@@ -1,0 +1,13 @@
+body {
+    background-image: url("../images/trojkaty.gif");
+}
+
+.container.body {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.navbar.navbar-default {
+    background-color: #016A88;
+}

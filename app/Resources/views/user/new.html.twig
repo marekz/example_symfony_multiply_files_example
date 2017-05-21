@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>User creation</h1>
+
+    {{ form_start(form) }}
+    {{ form_widget(form.name) }}
+    {{ form_widget(form.lastName) }}
+    <ul class="files" data-prototype="{{ form_widget(form.files.vars.prototype)|e('html_attr') }}">
+        {% for element in form.files %}
+            <li>
+                {{ form_widget(element.file) }}
+            </li>
+        {% endfor %}
+    </ul>
+    <input type="submit" value="Create" />
+    {{ form_end(form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('user_index') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}
