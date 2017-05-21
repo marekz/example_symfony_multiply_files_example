@@ -1,4 +1,10 @@
 phptestproject
 ==============
 
-A Symfony project created on May 17, 2017, 8:41 am.
+After clone:
+- composer install
+sh tmp_command
+php bin/console server:start
+http://127.0.0.1:8000/user/new
+
+
